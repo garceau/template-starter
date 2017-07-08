@@ -22,8 +22,20 @@ gulp
 Open your web browser to <code>http://localhost:3000/</code> to see automatic changes made to the documents.
 
 ### Folder Structure
-- src/ <code>These are your source files. Changes should only be made to files in this folder</code>
-    - assets/ <code>These are your projects assets</code>
+>
+> 
+
+    ├── src                 # The files you edit.
+    │   ├── assets          # Your Assets (scss, css, img, design, js)
+    │   ├── data            # Place .json, .yaml, or .yml files in this folder.
+    │   ├── helpers         # Panini Helpers
+    │   ├── layouts         # Your Layouts - Must have default
+    │   ├── pages           # Your Pages
+    │   └── partials        # Reusable code that can be added to your site
+    └── .gitignore          # This is your github file that tells github which files/folder to ignore.
+    └── gulpfile.js         # The code behind making this work.
+    └── LICENSE             # GNU GENERAL PUBLIC LICENSE
+    └── package.json        # Package info, used for saving and installing dependencies.
 
 #### //TODO: Add More Info
 
