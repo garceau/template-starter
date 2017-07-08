@@ -7,17 +7,28 @@ This template starter is a website project scaffolding starter. It uses the late
 ** This application uses [NodeJS](http://nodejs.org). Click the link to download the latest stable version. 
 
 ## To Get Started
-1. Download the file on github at https://github.com/garceau/template-stater or from the terminal
-key in <kbd>git clone https://github.com/garceau/template-starter.git your-project-name</kbd>
-3. <code>cd your-project-name</code>
-2. Run <code>npm install</code>
-3. Run <code>gulp</code> to have the system start compiling the documents into a ./dist folder.
-4.  Open your web browser to <code>http://localhost:8000/</code> to see automatic changes made to the documents.
+Download the file on github at https://github.com/garceau/template-stater 
+
+<b>While In Terminal</b> **  NOTE: change <u>your-project-name</u> to the name of your project. **
+```bash
+git clone https://github.com/garceau/template-starter.git your-project-name
+
+cd your-project-name
+
+npm install
+
+gulp
+```
+Open your web browser to <code>http://localhost:3000/</code> to see automatic changes made to the documents.
 
 ### Folder Structure
 - src/ <code>These are your source files. Changes should only be made to files in this folder</code>
     - assets/ <code>These are your projects assets</code>
 
-// TODO: Add More Info
+#### //TODO: Add More Info
 
+
+
+
+&copy;  2017 Tommy Garceau.
 
