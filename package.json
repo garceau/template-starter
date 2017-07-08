@@ -1,0 +1,25 @@
+{
+  "name": "template-starter",
+  "version": "1.0.0",
+  "description": "HTML website template starter.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/garceau/template-starter.git"
+  },
+  "keywords": [
+    "html",
+    "template",
+    "html",
+    "template"
+  ],
+  "author": "Tommy Garceau",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/garceau/template-starter/issues"
+  },
+  "homepage": "https://github.com/garceau/template-starter#readme"
+}
