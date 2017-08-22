@@ -1,0 +1,295 @@
+// TODO Work on the Visibility of hide-for-lg-only
+//
+.is {
+    &-visible {
+        display: block !important;
+    }
+    &-hidden {
+        display: none !important;
+    }
+}
+
+.hide {
+    display: none !important;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+@media screen and (max-width: 39.9375em) {
+    .hide-for-sm-only {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 0em),
+screen and (min-width: 40em) {
+    .show-for-sm-only {
+        display: none !important;
+    }
+}
+
+@media print,
+screen and (min-width: 40em) {
+    .hide-for-md {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 39.9375em) {
+    .show-for-md {
+        display: none !important;
+    }
+}
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    .hide-for-md-only {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 39.9375em),
+screen and (min-width: 64em) {
+    .show-for-md-only {
+        display: none !important;
+    }
+}
+
+@media print,
+screen and (min-width: 64em) {
+    .hide-for-lg {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 63.9375em) {
+    .show-for-lg {
+        display: none !important;
+    }
+}
+
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {
+    .hide-for-lg-only {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 63.9375em),
+screen and (min-width: 75em) {
+    .show-for-lg-only {
+        display: none !important;
+    }
+}
+
+.show-for-sr,
+.show-on-focus {
+    position: absolute !important;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    -webkit-clip-path: inset($six);
+    clip-path: inset($six);
+    border: 0;
+}
+
+.show-on-focus:active,
+.show-on-focus:focus {
+    position: static !important;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    clip: auto;
+    white-space: normal;
+    -webkit-clip-path: none;
+    clip-path: none;
+}
+
+.show-for-landscape,
+.hide-for-portrait {
+    display: block !important;
+}
+
+@media screen and (orientation: landscape) {
+    .show-for-landscape,
+    .hide-for-portrait {
+        display: block !important;
+    }
+}
+
+@media screen and (orientation: portrait) {
+    .show-for-landscape,
+    .hide-for-portrait {
+        display: none !important;
+    }
+}
+
+.hide-for-landscape,
+.show-for-portrait {
+    display: none !important;
+}
+
+@media screen and (orientation: landscape) {
+    .hide-for-landscape,
+    .show-for-portrait {
+        display: none !important;
+    }
+}
+
+@media screen and (orientation: portrait) {
+    .hide-for-landscape,
+    .show-for-portrait {
+        display: block !important;
+    }
+}
+
+.hide {
+    display: none !important;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+@media screen and (max-width: 39.9375em) {
+    .hide-for-sm-only {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 0em),
+screen and (min-width: 40em) {
+    .show-for-sm-only {
+        display: none !important;
+    }
+}
+
+@media print,
+screen and (min-width: 40em) {
+    .hide-for-md {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 39.9375em) {
+    .show-for-md {
+        display: none !important;
+    }
+}
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    .hide-for-md-only {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 39.9375em),
+screen and (min-width: 64em) {
+    .show-for-md-only {
+        display: none !important;
+    }
+}
+
+@media print,
+screen and (min-width: 64em) {
+    .hide-for-lg {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 63.9375em) {
+    .show-for-lg {
+        display: none !important;
+    }
+}
+
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {
+    .hide-for-lg {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 63.9375em),
+screen and (min-width: 75em) {
+    .show-for-lg-only {
+        display: none !important;
+    }
+}
+
+.show-for-sr,
+.show-on-focus {
+    position: absolute !important;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    -webkit-clip-path: inset($six);
+    clip-path: inset($six);
+    border: 0;
+}
+
+.show-on-focus:active,
+.show-on-focus:focus {
+    position: static !important;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    clip: auto;
+    white-space: normal;
+    -webkit-clip-path: none;
+    clip-path: none;
+}
+
+.show-for-landscape,
+.hide-for-portrait {
+    display: block !important;
+}
+
+@media screen and (orientation: landscape) {
+    .show-for-landscape,
+    .hide-for-portrait {
+        display: block !important;
+    }
+}
+
+@media screen and (orientation: portrait) {
+    .show-for-landscape,
+    .hide-for-portrait {
+        display: none !important;
+    }
+}
+
+.hide-for-landscape,
+.show-for-portrait {
+    display: none !important;
+}
+
+@media screen and (orientation: landscape) {
+    .hide-for-landscape,
+    .show-for-portrait {
+        display: none !important;
+    }
+}
+
+@media screen and (orientation: portrait) {
+    .hide-for-landscape,
+    .show-for-portrait {
+        display: block !important;
+    }
+}
+
+.grid {
+    .cell {
+        @media screen and (min-width: 0em) and (max-width: 40em) {
+            border: 1px solid blue;
+        }
+        @media screen and (min-width: 40em) and (max-width: 64em) {
+            border: 1px solid red;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+@mixin p-lr($padding) {
+    padding-left: $padding;
+    padding-right: $padding;
+}
+
+@mixin m-lr($margin) {
+    padding-left: $margin;
+    padding-right: $margin;
+}
+
+@mixin cell($cell) {
+    -webkit-flex: 0 0 $cell;
+    -ms-flex: 0 0 $cell;
+    flex: 0 0 $cell;
+    max-width: $cell;
+}
+
+@mixin wrap($wrap) {
+    -webkit-flex-wrap: $wrap;
+    -ms-flex-wrap: $wrap;
+    flex-wrap: $wrap;
+}
+
+@mixin order($order) {
+    -webkit-order: $order;
+    -ms-flex-order: $order;
+    order: $order;
+}
