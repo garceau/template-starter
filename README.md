@@ -7,6 +7,12 @@ This template starter is a website project scaffolding starter. It uses the late
 ** This application uses [NodeJS](http://nodejs.org). Click the link to download the latest stable version. 
 
 ## To Get Started
+<b>You can install the package via npm with the command: </b>
+```bash
+npm install template-starter
+```
+
+<b>You can download the file directly</b>
 Download the file on github at https://github.com/garceau/template-stater 
 
 <b>While In Terminal</b> **  NOTE: change <u>your-project-name</u> to the name of your project. **
