@@ -43,7 +43,7 @@ gulp.task('scripts:main', function() {
 
 // SCRIPTS:VENDOR
 gulp.task('scripts:vendor', function() {
-  return gulp.src('`src/assets/js/vendor/**/*')
+  return gulp.src('src/assets/js/vendor/**/*')
   .pipe(gulp.dest('dist/assets/js/vendor/'))
 })
 
