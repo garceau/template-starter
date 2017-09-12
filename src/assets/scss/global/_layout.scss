@@ -1,35 +1,30 @@
 .grid {
     max-width: 75rem;
-    margin-right: auto;
-    margin-left: auto;
+    @include m-lr(auto);
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-flex-flow: row wrap;
     -ms-flex-flow: row wrap;
     flex-flow: row wrap;
+    justify-content: flex-start; // options: flex-start|flex-end|center|space-between|space-around|initial|inherit;
     .grid {
-        margin-right: -0.625rem;
-        margin-left: -0.625rem;
+        @include m-lr(-0.625rem);
         @media print,
         screen and (min-width: 40em) {
-            margin-right: -0.9375rem;
-            margin-left: -0.9375rem;
+            @include m-lr(-0.9375rem);
         }
         @media print,
         screen and (min-width: 64em) {
-            margin-right: -0.9375rem;
-            margin-left: -0.9375rem;
+            @include m-lr(-0.9375rem);
             &.collapse {
-                margin-right: 0;
-                margin-left: 0;
+                @include m-lr(0);
             }
             &.expanded {
                 max-width: none;
             }
             .grid {
-                margin-right: auto;
-                margin-left: auto;
+                @include m-lr(auto);
             }
         }
     }
@@ -80,40 +75,40 @@ screen and (min-width: 40em) {
 }
 
 .sm {
-    &1 {
+    &-1 {
         @include cell($one);
     }
-    &2 {
+    &-2 {
         @include cell($two);
     }
-    &3 {
+    &-3 {
         @include cell($three);
     }
-    &4 {
+    &-4 {
         @include cell($four);
     }
-    &5 {
+    &-5 {
         @include cell($five);
     }
-    &6 {
+    &-6 {
         @include cell($six);
     }
-    &7 {
+    &-7 {
         @include cell($seven);
     }
-    &8 {
+    &-8 {
         @include cell($eight);
     }
-    &9 {
+    &-9 {
         @include cell($nine);
     }
-    &10 {
+    &-10 {
         @include cell($ten);
     }
-    &11 {
+    &-11 {
         @include cell($eleven);
     }
-    &12 {
+    &-12 {
         @include cell($twelve);
     }
     &-order- {
@@ -205,46 +200,70 @@ screen and (min-width: 40em) {
         &8 {
             @include wrap(wrap);
         }
+        &1 > .cell {
+            @include maxwidth(100);
+        }
+        &2 > .cell {
+            @include maxwidth(50);
+        }
+        &3 > .cell {
+            @include maxwidth(33.3333);
+        }
+        &4 > .cell {
+            @include maxwidth(25);
+        }
+        &5 > .cell {
+            @include maxwidth(20);
+        }
+        &6 > .cell {
+            @include maxwidth(16.6666);
+        }
+        &7 > .cell {
+            @include maxwidth(14.2857);
+        }
+        &8 > .cell {
+            @include maxwidth(12.5);
+        }  
     }
 }
 
 @media print,
 screen and (min-width: 40em) {
     .md {
-        &1 {
+        &-1 {
             @include cell($one);
         }
-        &2 {
+        &-2 {
             @include cell($two);
         }
-        &3 {
+        &-3 {
             @include cell($three);
         }
-        &4 {
+        &-4 {
             @include cell($four);
         }
-        &5 {
+        &-5 {
             @include cell($five);
         }
-        &6 {
+        &-6 {
             @include cell($six);
         }
-        &7 {
+        &-7 {
             @include cell($seven);
         }
-        &8 {
+        &-8 {
             @include cell($eight);
         }
-        &9 {
+        &-9 {
             @include cell($nine);
         }
-        &10 {
+        &-10 {
             @include cell($ten);
         }
-        &11 {
+        &-11 {
             @include cell($eleven);
         }
-        &12 {
+        &-12 {
             @include cell($twelve);
         }
         &-off- {
@@ -316,6 +335,30 @@ screen and (min-width: 40em) {
             &8 {
                 @include wrap(wrap);
             }
+            &1 > .cell {
+                @include maxwidth(100);
+            }
+            &2 > .cell {
+                @include maxwidth(50);
+            }
+            &3 > .cell {
+                @include maxwidth(33.3333);
+            }
+            &4 > .cell {
+                @include maxwidth(25);
+            }
+            &5 > .cell {
+                @include maxwidth(20);
+            }
+            &6 > .cell {
+                @include maxwidth(16.6666);
+            }
+            &7 > .cell {
+                @include maxwidth(14.2857);
+            }
+            &8 > .cell {
+                @include maxwidth(12.5);
+            }  
         }
     }
 }
@@ -323,40 +366,40 @@ screen and (min-width: 40em) {
 @media print,
 screen and (min-width: 64em) {
     .lg {
-        &1 {
+        &-1 {
             @include cell($one);
         }
-        &2 {
+        &-2 {
             @include cell($two);
         }
-        &3 {
+        &-3 {
             @include cell($three);
         }
-        &4 {
+        &-4 {
             @include cell($four);
         }
-        &5 {
+        &-5 {
             @include cell($five);
         }
-        &6 {
+        &-6 {
             @include cell($six);
         }
-        &7 {
+        &-7 {
             @include cell($seven);
         }
-        &8 {
+        &-8 {
             @include cell($eight);
         }
-        &9 {
+        &-9 {
             @include cell($nine);
         }
-        &10 {
+        &-10 {
             @include cell($ten);
         }
-        &11 {
+        &-11 {
             @include cell($eleven);
         }
-        &12 {
+        &-12 {
             @include cell($twelve);
         }
         &-off- {
@@ -408,6 +451,30 @@ screen and (min-width: 64em) {
             &8 {
                 @include wrap(wrap);
             }
+            &1 > .cell {
+                @include maxwidth(100);
+            }
+            &2 > .cell {
+                @include maxwidth(50);
+            }
+            &3 > .cell {
+                @include maxwidth(33.3333);
+            }
+            &4 > .cell {
+                @include maxwidth(25);
+            }
+            &5 > .cell {
+                @include maxwidth(20);
+            }
+            &6 > .cell {
+                @include maxwidth(16.6666);
+            }
+            &7 > .cell {
+                @include maxwidth(14.2857);
+            }
+            &8 > .cell {
+                @include maxwidth(12.5);
+            }                                                                        
         }
     }
 }

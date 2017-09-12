@@ -1,11 +1,11 @@
 @mixin p-lr($padding) {
-    padding-left: $padding;
     padding-right: $padding;
+    padding-left: $padding;
 }
 
 @mixin m-lr($margin) {
-    padding-left: $margin;
-    padding-right: $margin;
+    margin-right: $margin;
+    margin-left: $margin;
 }
 
 @mixin cell($cell) {
@@ -25,4 +25,13 @@
     -webkit-order: $order;
     -ms-flex-order: $order;
     order: $order;
+}
+
+// Max Width Mixin
+@mixin maxwidth($maxwidth) {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 $maxwidth * 1%;
+    -ms-flex: 0 0 $maxwidth * 1%;
+    flex: 0 0 $maxwidth * 1%;
+    max-width: $maxwidth * 1%;
 }

@@ -1,0 +1,27 @@
+a[class*="primary"] {
+    background: $primary;
+}
+
+a[class*="secondary"] {
+    background: $secondary;
+}
+
+a[class*="alert"] {
+    background: $alert;
+}
+
+a[class*="warning"] {
+    background: $warning;
+}
+
+a[class*="note"] {
+    background: $note;
+}
+
+a[class*="success"] {
+    background: $success;
+}
+
+a[class*="hollow"] {
+    background: transparent;
+}

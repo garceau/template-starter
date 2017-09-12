@@ -1,3 +1,4 @@
+// Column Sizes
 $zero: 0%;
 $one: 8.33333%;
 $two: 16.66667%;
@@ -11,3 +12,23 @@ $nine: 75%;
 $ten: 83.33333%;
 $eleven: 91.66667%;
 $twelve: 100%;
+
+// Transitions
+$transitions: all .3s ease-in-out;
+
+
+$font_sans-serif: 'Roboto', 'Helvetica Neue', Helvetica, 'Calibri', 'Segoe UI', Arial, sans-serif;
+$font_serif: 'Roboto Mono', 'Andale Mono', monospace;
+$font_headings: 'Helvetica Neue';
+$body-bg: #fff;
+$body-color: #444;
+$link-color: #444;
+$link-hover-color: black;
+
+// Colors
+$primary: dodgerblue;
+$secondary: slateblue;
+$alert: orange;
+$note: yellow;
+$success: green;
+$warning: tomato;

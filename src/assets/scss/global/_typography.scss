@@ -1,0 +1,53 @@
+body {
+    font: {
+        family: $font_sans-serif;
+        weight: 400;
+        size: 16px;
+        size: 100%;
+        size: 1rem;
+    }
+    color: $body-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font: {
+        family: $font_headings,$font_sans-serif;
+        weight: 300;
+    }
+    letter-spacing: -1px;
+    margin: 0.2em;
+}
+h1 {
+    font-size: 48px;
+}
+h2 {
+    font-size: 40px;
+}
+h3 {
+    font-size: 36px;
+}
+h4 {
+    font-size: 30px;
+}
+h5 {
+    font-size: 24px;
+}
+h6 {
+    font-size: 20px;
+}
+a {
+    text-decoration: none;
+        color: $link-color;
+        font-weight: 400;
+    &:hover {
+        color: $link-hover-color;
+    }
+    &.button {
+        margin: 0.2em;
+        
+    }
+}
+p {
+    margin: 0.2em;
+    padding: 0;
+}
