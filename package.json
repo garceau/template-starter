@@ -1,6 +1,6 @@
 {
   "name": "template-starter",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "HTML website template starter.",
   "main": "gulpfile.js",
   "scripts": {
