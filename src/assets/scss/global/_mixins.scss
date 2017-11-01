@@ -9,8 +9,6 @@
 }
 
 @mixin cell($cell) {
-    -webkit-flex: 0 0 $cell;
-    -ms-flex: 0 0 $cell;
     flex: 0 0 $cell;
     max-width: $cell;
 }
